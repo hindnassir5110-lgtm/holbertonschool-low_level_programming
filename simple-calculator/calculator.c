@@ -42,7 +42,24 @@ int main(void)
 		}
 		else if (choice != 0 && (choice < 1 || choice > 4))
 		{
-			printf("Invalid choice\n");
+		else if (choice == 4)
+{
+	printf("A: ");
+	scanf("%d", &a);
+
+	printf("B: ");
+	scanf("%d", &b);
+
+	if (b == 0)
+	{
+		printf("Error: division by zero\n");
+	}
+	else
+	{
+		printf("Result: %.1f\n", (float)a / b);
+	}
+
+	printf("Invalid choice\n");
 		}
 
 	} while (choice != 0);
