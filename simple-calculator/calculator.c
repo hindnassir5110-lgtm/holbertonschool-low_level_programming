@@ -20,49 +20,55 @@ int main(void)
 		{
 			printf("A: ");
 			scanf("%d", &a);
+
 			printf("B: ");
 			scanf("%d", &b);
+
 			printf("Result: %d\n", a + b);
 		}
 		else if (choice == 2)
 		{
 			printf("A: ");
 			scanf("%d", &a);
+
 			printf("B: ");
 			scanf("%d", &b);
+
 			printf("Result: %d\n", a - b);
 		}
 		else if (choice == 3)
 		{
 			printf("A: ");
 			scanf("%d", &a);
+
 			printf("B: ");
 			scanf("%d", &b);
+
 			printf("Result: %d\n", a * b);
 		}
-		else if (choice != 0 && (choice < 1 || choice > 4))
-		{
 		else if (choice == 4)
-{
-	printf("A: ");
-	scanf("%d", &a);
+		{
+			printf("A: ");
+			scanf("%d", &a);
 
-	printf("B: ");
-	scanf("%d", &b);
+			printf("B: ");
+			scanf("%d", &b);
 
-	if (b == 0)
-	{
-		printf("Error: division by zero\n");
-	}
-	else
-	{
-		printf("Result: %.1f\n", (float)a / b);
-	}
-
-	printf("Invalid choice\n");
+			if (b == 0)
+			{
+				printf("Error: division by zero\n");
+			}
+			else
+			{
+				printf("Result: %.1f\n", (double)a / b);
+			}
 		}
-
-	} while (choice != 0);
+		else if (choice != 0)
+		{
+			printf("Invalid choice\n");
+		}
+	}
+	while (choice != 0);
 
 	printf("Bye!\n");
 
