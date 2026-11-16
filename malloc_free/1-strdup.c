@@ -1,4 +1,3 @@
-cat << 'EOF' > 1-strdup.c
 #include "main.h"
 #include <stdlib.h>
 
@@ -35,4 +34,3 @@ char *_strdup(char *str)
 
 	return (dup);
 }
-EOF
