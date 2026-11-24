@@ -8,7 +8,7 @@ what they hold, and how to use them.
 - What function pointers are and how to use them
 - What a function pointer exactly holds
 - Where a function pointer points to in virtual memory
-
+| `1-array_iterator.c` | Executes a function on each element of an array |
 ## Requirements
 
 - Allowed editors: vi, vim, emacs
